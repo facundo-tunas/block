@@ -17,7 +17,7 @@ browser.webRequest.onBeforeRequest.addListener(
       await browser.storage.local.set({
         currentBlocked: { url: match.url, until: match.blockedUntil },
       });
-      return { redirectUrl: browser.runtime.getURL("blocked.html") };
+      return { redirectUrl: browser.runtime.getURL("html/blocked.html") };
     }
 
     return {};
