@@ -1,0 +1,13 @@
+{
+"manifest_version": 2,
+"name": "Block",
+"version": "1.0",
+"browser_action": { "default_popup": "popup.html" },
+"permissions": ["storage", "webRequest", "webRequestBlocking", "activeTab", "<all_urls>"],
+"background": {
+  "page": "background.html"
+  },
+  "web_accessible_resources": [
+    "blocked.html"
+  ]
+}

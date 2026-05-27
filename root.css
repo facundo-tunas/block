@@ -1,0 +1,39 @@
+:root {
+  --bg-primary: #ffffff;
+
+  --color-primary: #000;
+  --color-secondary: #999;
+  --color-tertiary: #bebebe;
+
+  --accent: skyblue;
+  --danger: red;
+  --success: lightgreen;
+
+  --gap-medium: 0.5rem;
+  --gap-small: 0.25rem;
+  --gap-smallest: 0.05rem;
+
+  --border: #cccccc;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+
+  font-size: inherit;
+}
+
+button {
+  --color: var(--accent);
+
+  &.danger {
+    --color: var(--danger);
+  }
+
+  &.success {
+    --color: var(--success);
+  }
+}

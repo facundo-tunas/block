@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>helo :3</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link href="./root.css" rel="stylesheet">
+
+    <script type="module" defer src="./dist/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h4>Block</h4>
+      <div id="blocked-pages" class="blocked-pages">
+        <p class="empty">No currently blocked pages.</p>
+      </div>
+      <form id="block-form" class="block-form">
+        <label>
+          URL
+          <input />
+        </label>
+        <label>Duration</label>
+          <div id="duration-list" class="duration-list">
+            <button id="dr-btn" type="button">-60m</button>
+            <button id="dr-btn" type="button">-30m</button>
+
+            <span class="current-duration">2h</span>
+
+            <button id="dr-btn" type="button">+30m</button>
+            <button id="dr-btn" type="button">+60m</button>
+          </div>
+        <button type="submit" id="block-button" class="block-button danger">Block Page</button>
+      </form>
+    </div>
+  </body>
+</html>
